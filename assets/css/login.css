@@ -1,0 +1,149 @@
+#ablum-body{
+  background-color: #FFFFFF;
+  margin-top: 150px;
+  height: auto;
+}
+
+#ablum-body h1{
+  margin-bottom: 80px;
+}
+
+#thumbnail-responsive{
+  margin: auto;
+  width: 65%;
+}
+
+.circular-portrait {
+  margin-top: 20px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular-portrait img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+
+
+.caption p{
+    margin-top:10px;
+    height: 50px;
+}
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  #d6eaf8;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .circular-portrait {
+    margin-top: 20px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .circular-portrait img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .circular-portrait {
+    margin-top: 20px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .circular-portrait img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  #thumbnail-responsive{
+    margin: auto;
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #thumbnail-responsive{
+    margin: auto;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #thumbnail-responsive{
+    margin: auto;
+    width: 50%;
+  }
+}

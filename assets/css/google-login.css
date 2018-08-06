@@ -1,0 +1,22 @@
+body, html {
+  height: 100%;
+}
+.background-img {
+  background-image: url("../images/googleDrive.jpg");
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  margin-top: 530px;
+}
+#index-header{
+  background-color:#fbfcfc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  opacity: 0.7;
+}

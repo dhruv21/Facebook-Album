@@ -1,0 +1,62 @@
+#logo{
+  margin-top: -4px;
+}
+
+#nav-text-link{
+  color:#FFFFFF;
+}
+
+#user-data-body{
+  margin-top: 100px;
+  background-color: #ecf0f1;
+  padding: 25px;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+
+#empty-album{
+  height: 500px;
+}
+
+#empty-album h4{
+  margin-top: 100px;
+}
+
+.background-img {
+  background-image: url("../images/loginImg.jpg");
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar{
+  border-radius: 0px;
+  background-color: #45b39d;
+  border: 1px solid #45b39d;
+}
+
+.profile{
+  border-radius:150px;
+}
+
+@media only screen and (max-width: 992px) {
+  #user-img{
+    width: 22%;
+  }
+
+  #user-data{
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #user-img{
+    width: 30%;
+  }
+  #user-data{
+    margin-top: -10px;
+  }
+}
