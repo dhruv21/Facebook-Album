@@ -2,7 +2,7 @@
 
 Demo link: https://fbbook.in/
 
-You have to rename the root folder to rtcampFacebookPhotoGallery
+You have to rename the root folder to rtCampFacebookPhotoGallery
 
 For more information goto the user guide folder and read all pdf.
 
