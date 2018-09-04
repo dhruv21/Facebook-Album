@@ -6,16 +6,16 @@
 -->
 
 <?php
-	require_once "f-config.php";
+    require_once "f-config.php";
 
 	// To check user is login or not.
-  if (isset($_SESSION['fb_access_token'])) {
+    if (isset($_SESSION['fb_access_token'])) {
 		header('Location: login.php');
 		exit();
 	}
 
 	$redirectURL = "http://localhost/rtcampFacebookPhotoGallery/f-callback.php";
-	$permissions = ['email'];
+	$permissions = ['email','user_photos'];
 	$loginURL = $helper->getLoginUrl($redirectURL, $permissions);
 
 ?>

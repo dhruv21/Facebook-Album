@@ -6,15 +6,21 @@
 -->
 
 <?php
-  session_start();
-  require_once "lib/Facebook/autoload.php";
+    session_start();
+    require_once "lib/Facebook/autoload.php";
 
 
-  $FB = new \Facebook\Facebook([
-    'app_id' => ' 930969873755166',
-    'app_secret' => '91ef88888e7ce5c2f9793e90f65e3cfe',
-    'default_graph_version' => 'v3.1'
-  ]);
+    // set the basic facebook configration.
+    $FB = new \Facebook\Facebook([
+        'app_id' => '930969873755166',
+        'app_secret' => '91ef88888e7ce5c2f9793e90f65e3cfe',
+        'default_graph_version' => 'v3.1'
+    ]);
 
-  $helper = $FB->getRedirectLoginHelper();
+    $helper = $FB->getRedirectLoginHelper();
+
+    if (isset($_GET['state'])) {
+        $helper->getPersistentDataHandler()->set('state', $_GET['state']); 
+    }
 ?>
+
