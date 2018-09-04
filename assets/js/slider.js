@@ -33,6 +33,6 @@ function openNav(id, count) {
 }
 
 function closeNav(id) {
-    document.getElementById("myNav"+id).style.width = "0%";
-    clearInterval(myVar);
+    document.getElementById("myNav"+id).style.width = "0%";   
+    location.reload();
 }
